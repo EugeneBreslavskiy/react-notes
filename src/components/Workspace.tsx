@@ -1,8 +1,8 @@
 import React from 'react';
-import { Layout, Space, Button, Typography } from 'antd';
+import { Layout } from 'antd';
+import Note from './Note';
 
 const { Content } = Layout;
-const { Paragraph } = Typography;
 
 const WorkspaceStyles = {
     padding: '25px',
@@ -11,11 +11,7 @@ const WorkspaceStyles = {
 
 const Workspace: React.FC = (): JSX.Element => {
     return <Content style={WorkspaceStyles}>
-        <Paragraph>Item content</Paragraph>
-        <Space size={'small'}>
-            <Button>Delete</Button>
-            <Button>Edit</Button>
-        </Space>
+        <Note/>
     </Content>
 };
 
